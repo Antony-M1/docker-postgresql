@@ -1,4 +1,8 @@
+
+Run the the container in `detach` mode
+```
 docker compose up -d
+```
 
 Don’t execute this command
 ```
