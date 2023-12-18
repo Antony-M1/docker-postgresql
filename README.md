@@ -49,4 +49,45 @@ The DVD rental database represents the business processes of a DVD rental store.
 * 1 domain
 * 13 sequences
 
+### Step 1
+Clone the project and open the project in any code editor like `VS-Code` & Up the container using this command
+```
+docker compose up -d
+```
+### Step 2
+Move the `dvdrental.tar` file inside the container  in `home` folder using this command
+```
+docker cp dvdrental.tar <container_id>:/path/to/container/directory
+```
+Or
+```
+docker cp ./db/dvdrental.tar postgresql:/home/
+```
+![image](https://github.com/Antony-M1/docker-postgresql/assets/96291963/4d1d43e4-f6b6-4733-acb8-e4facca6192a)
+
+### Step 3
+Restore the DB before that login the DB using this command
+```
+docker exec -it -u postgres postgresql psql
+```
+Create a `DB` using this command. with the name of `dvdrental`
+```
+CREATE DATABASE dvdrental;
+```
+
+After creating the Database login into the container `postgresql`
+```
+docker exec -it postgresql bash
+```
+Restore using `pg_restore`
+```
+pg_restore -U postgres -d dvdrental dvdrental.tar
+```
+or 
+```
+pg_restore -U <username> -d <dbname> dvdrental.tar
+```
+
+For more details about the DB please check this [Link](https://www.postgresqltutorial.com/postgresql-getting-started/postgresql-sample-database/)
+
 </details>
