@@ -1,3 +1,5 @@
+![image](https://github.com/Antony-M1/docker-postgresql/assets/96291963/7fccdff2-63f6-4aaf-9c47-3f3bb2363666)
+
 
 Run the the container in `detach` mode
 ```
