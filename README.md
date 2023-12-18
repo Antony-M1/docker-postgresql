@@ -8,7 +8,7 @@ Username: `postgres`
 Password: `postgres`
 
 ---
-Run the the container in `detach` mode
+Clone the project & Run the the container in `detach` mode
 ```
 docker compose up -d
 ```
