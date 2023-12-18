@@ -93,5 +93,5 @@ For more details about the DB please check this [Link](https://www.postgresqltut
 </details>
 
 # ER Diagram
-* [Entity-Relationship Diagram Symbols and Notation](https://www.lucidchart.com/pages/ER-diagram-symbols-and-meaning)
+* [Entity-Relationship Diagram Symbols and Notation 🔥🔥🔥](https://www.lucidchart.com/pages/ER-diagram-symbols-and-meaning)
 * [Guide to entity-relationship diagram notations & symbols](https://www.gleek.io/blog/er-symbols-notations)
