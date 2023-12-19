@@ -37,6 +37,7 @@ In this part we will going to restore the existing database.
 [Document](https://www.postgresqltutorial.com/postgresql-getting-started/postgresql-sample-database/)
 
 [Lucidchart](https://lucid.app/lucidchart/22b75a12-cbc2-49c9-8c28-74a74007c104/edit?viewport_loc=-4718%2C-2796%2C3363%2C2168%2C0_0&invitationId=inv_2d8bb63c-4508-44c7-8a4b-106e08ccd4b5)
+
   Summary: in this tutorial, we will introduce you to a PostgreSQL sample database that you can use for learning and practicing PostgreSQL.
 
 We will use the DVD rental database to demonstrate the features of PostgreSQL.
