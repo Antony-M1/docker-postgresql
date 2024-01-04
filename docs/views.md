@@ -56,3 +56,44 @@ CREATE VIEW actor AS
 [42P07] ERROR: relation "customer_details" already exists
 ```
 
+# Naming conventional
+Choosing meaningful and clear names for views is essential for maintaining a well-organized and understandable database schema. Here are some suggestions for naming views:
+
+1. **Use Descriptive Names:**
+   - Choose names that clearly convey the purpose or content of the view.
+   - Avoid generic names like "view1" or "temp_view."
+
+2. **Include Keywords:**
+   - Consider including keywords like "view" or "vw" as a prefix to explicitly indicate that it's a view.
+
+3. **Include Source Table Names:**
+   - If the view is based on specific tables, consider including the names of those tables in the view name.
+   - Example: `customer_orders_summary_view`
+
+4. **Avoid Ambiguity:**
+   - Ensure that the view name doesn't create confusion with existing table names or other views.
+   - Make it clear that it's a view and not a base table.
+
+5. **Follow a Naming Convention:**
+   - Adopt a consistent naming convention across your database, so it's easy to understand the purpose of different database objects.
+   - Example: `vw_[ObjectName]` or `[SchemaName].[vw_ObjectName]`
+
+6. **Be Concise but Informative:**
+   - Keep the name concise while providing enough information about the view's content or purpose.
+
+7. **Consider CamelCase or Underscores:**
+   - Choose a naming style that aligns with your organization's conventions. CamelCase (e.g., `customerOrdersSummaryView`) or underscores (e.g., `customer_orders_summary_view`) are common styles.
+
+8. **Avoid Special Characters:**
+   - Stick to alphanumeric characters and underscores to ensure compatibility and ease of use.
+
+Example:
+```sql
+-- Naming Example: vw_CustomerOrdersSummary
+CREATE VIEW vw_CustomerOrdersSummary AS
+SELECT customer_id, COUNT(order_id) AS order_count
+FROM customer_orders
+GROUP BY customer_id;
+```
+
+Remember that the key is to make the names both informative and consistent. This makes it easier for developers, administrators, and other stakeholders to understand the purpose of the views within your database schema.
