@@ -5,7 +5,7 @@ While stored procedures and functions in PostgreSQL share similarities, they ser
 1. **Stored Procedures:**
    - Procedures in PostgreSQL are typically used for procedural programming and can perform a series of SQL and procedural language statements.
    - They are defined using the `CREATE PROCEDURE` statement.
-   - Procedures can have input and output parameters, but they do not necessarily return a value.
+   - Procedures can have input and output parameters, but they do `not necessarily return a value`.
    - Execution of a procedure is usually done with the `CALL` statement.
 
    Example of a stored procedure:
