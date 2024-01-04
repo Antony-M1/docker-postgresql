@@ -97,3 +97,12 @@ GROUP BY customer_id;
 ```
 
 Remember that the key is to make the names both informative and consistent. This makes it easier for developers, administrators, and other stakeholders to understand the purpose of the views within your database schema.
+
+# Inspect the View
+```sql
+-- Replace 'your_view_name' with the actual name of your view
+SELECT *
+FROM information_schema.views
+WHERE table_name = 'your_view_name';
+
+```
