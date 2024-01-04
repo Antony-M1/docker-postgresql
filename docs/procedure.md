@@ -46,7 +46,10 @@ Stored procedures in PostgreSQL provide a way to encapsulate and reuse complex l
 
 
 # Questions
-### Can I use the table name as PROCEDURE name ?
+
+<details><summary><h3>Can I use the table name as PROCEDURE name ?</h3></summary>
+
+  
 In PostgreSQL, the naming conventions for `stored procedures` and `tables` are different. While it is technically `possible` to name a stored procedure with the same name as a table, it's `generally not recommended` to do so for clarity and `maintainability` reasons.
 
 It's common practice to use meaningful names that convey the purpose of the stored procedure. Naming stored procedures after tables may lead to confusion and make it harder for developers (including yourself) to understand the purpose of each object in the database.
@@ -70,6 +73,7 @@ $$;
 In the example above, the stored procedure is named `insert_data_into_example_table`, which clearly indicates its purpose.
 
 Using meaningful and descriptive names for stored procedures helps improve code readability and maintainability. It's a good practice to choose names that reflect the functionality or operation performed by the stored procedure rather than naming it after a table.
+</details>
 
 # Naming Conventional
 When naming stored procedures in PostgreSQL, it's a good practice to follow a consistent and meaningful naming convention that reflects the purpose and functionality of the procedure. While naming conventions can vary, here are some common practices that can help improve clarity and maintainability:
