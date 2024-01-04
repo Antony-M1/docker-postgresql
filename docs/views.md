@@ -39,3 +39,20 @@ WHERE department = 'Finance';
 This statement modifies the existing `employee_view` to include employees from the `Finance` department.
 
 Remember to tailor the view definition to your specific use case and requirements.
+
+# Questions
+### Can I use the table name as view name?
+No. it will be through error. I won't allow you to create view like that.
+
+If you have a table named `customer_details` and you're attempting to create a view with the same name (`customer_details`), you might encounter an error because PostgreSQL does not allow creating a view with the same name as an existing table in the same schema. The names of tables and views must be unique within a schema.
+
+**Query**
+```
+CREATE VIEW actor AS
+    SELECT * FROM customer_details;
+```
+**Error**
+```
+[42P07] ERROR: relation "customer_details" already exists
+```
+
