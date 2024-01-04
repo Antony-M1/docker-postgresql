@@ -106,3 +106,9 @@ FROM information_schema.views
 WHERE table_name = 'your_view_name';
 
 ```
+or
+```sql
+SELECT table_name, view_definition
+FROM information_schema.views
+WHERE table_name = 'your_view_name';
+```
