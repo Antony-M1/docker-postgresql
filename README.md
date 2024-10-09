@@ -33,6 +33,9 @@ In this part we will going to restore the existing database.
 
 <details>
   <summary><h4>DVD Rental<h4></summary>
+
+  ![image](https://github.com/user-attachments/assets/970a6f2c-4262-436f-85bc-5e861760830b)
+
   
 [Document](https://www.postgresqltutorial.com/postgresql-getting-started/postgresql-sample-database/)
 
