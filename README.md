@@ -96,6 +96,28 @@ pg_restore -U <username> -d <dbname> dvdrental.tar
 
 For more details about the DB please check this [Link](https://www.postgresqltutorial.com/postgresql-getting-started/postgresql-sample-database/)
 
+# DB URI
+A **DB URI (Database URI)** is a connection string used to specify how to connect to a database.
+
+### Format (General):
+```
+dialect+driver://username:password@host:port/database
+```
+
+### Example (PostgreSQL):
+```
+postgresql://user:pass@localhost:5432/mydb
+```
+
+### Components:
+- **dialect**: Database type (e.g., `postgresql`, `mysql`, `sqlite`)
+- **driver** (optional): DB driver (e.g., `psycopg2`, `pymysql`)
+- **username/password**: Login credentials
+- **host/port**: Server and port
+- **database**: DB name
+
+Let me know if you want examples for a specific database like SQLite, MySQL, etc.
+
 </details>
 
 # ER Diagram
