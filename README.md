@@ -96,6 +96,13 @@ pg_restore -U <username> -d <dbname> dvdrental.tar
 
 For more details about the DB please check this [Link](https://www.postgresqltutorial.com/postgresql-getting-started/postgresql-sample-database/)
 
+</details>
+
+# ER Diagram
+* [Entity-Relationship Diagram Symbols and Notation 🔥🔥🔥](https://www.lucidchart.com/pages/ER-diagram-symbols-and-meaning)
+* [Guide to entity-relationship diagram notations & symbols](https://www.gleek.io/blog/er-symbols-notations)
+
+
 # DB URI
 A **DB URI (Database URI)** is a connection string used to specify how to connect to a database.
 
@@ -115,11 +122,3 @@ postgresql://user:pass@localhost:5432/mydb
 - **username/password**: Login credentials
 - **host/port**: Server and port
 - **database**: DB name
-
-Let me know if you want examples for a specific database like SQLite, MySQL, etc.
-
-</details>
-
-# ER Diagram
-* [Entity-Relationship Diagram Symbols and Notation 🔥🔥🔥](https://www.lucidchart.com/pages/ER-diagram-symbols-and-meaning)
-* [Guide to entity-relationship diagram notations & symbols](https://www.gleek.io/blog/er-symbols-notations)
